@@ -1,11 +1,11 @@
 function lazySort(list, callback) {
-			var result = [];
-			list.forEach(function(i) {
-				setTimeout(function() {
-					result.push(i);
-					if(result.length == list.length) {
-						callback(result);
-					}
-				}, i);
-			});
-		}
+    var result = [];
+    list.forEach(function(i) {
+        setTimeout(function() {
+	    result.push(i);
+	    if(result.length == list.length) {
+	        callback(result);
+	     }
+        }, i);
+   });
+}
